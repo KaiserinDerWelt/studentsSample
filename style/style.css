@@ -6,3 +6,7 @@
 .introSlide{
     height: 500px;
 }
+
+.modalRegister{
+    display: none;
+}
