@@ -1,0 +1,8 @@
+.navbarCustom{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.introSlide{
+    height: 500px;
+}
