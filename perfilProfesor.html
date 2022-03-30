@@ -41,7 +41,64 @@
             </div>
         </div>
     </nav>
-   
+    <div class="container-fluid">
+    <h1>Agregar calificaciones de alumnos</h1>
+    <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre del alumno</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juana Lopez Herradura">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Materia impartida:</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>Biologia</option>
+              <option>Matematicas</option>
+              <option>Estadistica</option>
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Elegir calificacion</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Comentarios del docente</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div>
+            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Guardar
+                  </button>
+            </div>
+        </div>
+      </form>
+    </div>
+    <!--Modal-->
+     <!-- Modal -->
+  <div class="modal fade modalRegister" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmacion de calificaciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Calificacion actualizada.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Footer -->
     <footer class="page-footer font-small teal pt-4">
         <!-- Footer Texto -->
