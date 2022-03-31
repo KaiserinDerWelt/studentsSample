@@ -24,15 +24,15 @@ $validar = json_decode($result);
 /* FIN DE CAPTCHA */
 
 if ($validar->success) {
-$email = trim($_POST['email']);
-$nombre = trim($_POST['nombre']);
-$apellido = trim($_POST['apellido']);
-$telefono = trim($_POST['telefono']);
-$comentario = trim($_POST['comentario']);
+$form3Example1c = trim($_POST['form3Example1c']);
+$form3Example1c2 = trim($_POST['form3Example1c2']);
+$form3Example3c = trim($_POST['form3Example3c']);
+$form3Example4c = trim($_POST['form3Example4c']);
+$form3Example4cd = trim($_POST['form3Example4cd']);
 
-$consulta = "E-mail: " . $email . " Nombre: " . $nombre . " Apellido: " . $apellido . "Comentario: " . $comentario;
+$consulta = "Nombre: " . $form3Example1c . " Rol: " . $form3Example1c2 . " Email: " . $form3Example3c;
 
-mail("ejemplo@MiDominio.com", "Contacto desde Formulario", $consulta);
+mail("desjmariana@gmail.com", "Contacto desde Formulario", $consulta);
 } else {
 echo "Captcha invalido";
 }
